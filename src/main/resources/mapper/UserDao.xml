@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pretty.ssm.sys.dao.UserDao">
+
+	<select id="queryAll" resultType="User" parameterType="com.pretty.ssm.entity.User">
+		SELECT *
+		FROM _user
+	</select>
+	
+	<select id="queryAllByPage" resultType="User">
+		SELECT *
+		FROM _user
+	</select>
+
+</mapper>
